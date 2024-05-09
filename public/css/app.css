@@ -1,0 +1,38 @@
+:root{
+    --main-color:#0077b6;
+}
+
+
+main{
+    margin-top: 5.5rem;
+}
+
+
+.products .card img{
+    height: 190px;
+    padding: 10px;
+}
+
+.products .btn{
+    background-color: var(--main-color);
+    color:white;
+}
+
+.fas.fa-heart{
+    /* no space between classes means classes are combinely applied */
+    color:red;
+}
+
+@media screen and(max-width:560px) {
+    .reviews-section{
+        width: 90vw;
+    }
+    #heading{
+        width: 75vw;
+    }
+}
+@media screen and(max-width:460px) {
+    #heading{
+        width:90vw;
+    }
+}
