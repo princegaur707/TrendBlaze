@@ -4,7 +4,7 @@ const {isLoggedIn} = require('../../middleware');
 const User = require('../../models/user');
 
 
-router.post('/product/:productid/like', isLoggedIn, async(req, res) => {
+router.post('/:productid/like', isLoggedIn, async(req, res) => {
     
     const {productid} = req.params;
 

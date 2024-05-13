@@ -120,10 +120,10 @@ app.use((req, res, next) => {
 app.use('/products', productRoutes);//now this will run only for '/products' one
 app.use(reviewRoutes);
 app.use(authRoutes);
-app.use(productApis);
-app.use(cartRoutes);
+app.use('/product',productApis);//similaly, these ones like above /product
+app.use('/user',cartRoutes);
 app.use(paymentRoutes);
-
+app.use(orderRoutes);
 
 app.all('*', (req, res) => {//fallback: In case request do not matches with any route
     //'all' will work for all types of request get, post, patch etc.
