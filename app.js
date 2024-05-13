@@ -22,7 +22,8 @@ const productRoutes = require('./routes/product');
 const reviewRoutes = require('./routes/review');
 const authRoutes = require('./routes/auth');
 const cartRoutes = require('./routes/cart');
-const paymentRoutes = require('./routes/payment')
+const paymentRoutes = require('./routes/payment');
+const orderRoutes = require('./routes/order');
 
 //APIs
 const productApis = require('./routes/api/productapi');
